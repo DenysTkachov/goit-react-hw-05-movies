@@ -2,8 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 
 import { lazy } from 'react';
 import { AppLayout } from './AppLayout/AppLayout';
-import { Cast } from './Cast/Cast';
-import { Review } from './Review/Review';
+import Review from './Review/Review';
+import Cast from './Cast/Cast';
+
 
 
 const HomePage = lazy(() => import('pages/HomePage'));

@@ -1,4 +1,4 @@
-import { fetchMovieRewiews } from 'api';
+
 import { useParams } from 'react-router-dom';
 import {
   NoReviewsMessage,
@@ -8,14 +8,20 @@ import {
 } from './Review.styled';
 import { Loader } from 'components/Loader/Loader';
 import { useMovieData } from 'hooks/useMovieData';
+import { fetchMovieRewiews } from 'api';
+
+
+
 
 const defaultImg =
   'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 
-
-export const Review = () => {
+const Review = () => {
   const params = useParams();
-  const { data: reviews, loading } = useMovieData(fetchMovieRewiews, params.id);
+  const { data: reviews, loading } = useMovieData(
+    fetchMovieRewiews,
+    params.id
+  );
 
   return (
     <ReviewsContainer>
@@ -39,3 +45,5 @@ export const Review = () => {
     </ReviewsContainer>
   );
 };
+
+export default Review; 

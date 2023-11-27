@@ -1,3 +1,4 @@
+
 import { fetchMovie } from 'api';
 import { Loader } from 'components/Loader/Loader';
 import { MovieInfo } from 'components/MovieInfo/MovieInfo';

@@ -1,16 +1,16 @@
-import { fetchMovieCredits } from 'api';
 
 import { useParams } from 'react-router-dom';
 import { CastItem, CastList, NoImage } from './Cast.styled';
 import { NoReviewsMessage } from 'components/Review/Review.styled';
 import { Loader } from 'components/Loader/Loader';
 import { useMovieData } from 'hooks/useMovieData';
+import { fetchMovieCredits } from 'api';
 
 const defaultImg =
   'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 
 
-export const Cast = () => {
+const Cast = () => {
   const params = useParams();
   const { data: cast, loading } = useMovieData(fetchMovieCredits, params.id);
 
@@ -46,3 +46,4 @@ export const Cast = () => {
     </>
   );
 };
+export default Cast;

@@ -1,8 +1,9 @@
-import { fetchTrendingMovies } from 'api';
+
 import MoviesList from 'components/MoviesList/MoviesList';
 import { Loader } from 'components/Loader/Loader';
 import { useHomeOrSearch } from 'hooks/useHomeOrSearch';
 import { useLocation } from 'react-router-dom';
+import { fetchTrendingMovies } from 'api';
 
 export default function HomePage() {
   const location = useLocation();

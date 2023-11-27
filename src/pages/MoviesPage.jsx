@@ -1,9 +1,10 @@
-import { fetchSearchMovie } from 'api';
+
 import MoviesList from 'components/MoviesList/MoviesList';
 import { Loader } from 'components/Loader/Loader';
 
 import { useHomeOrSearch } from 'hooks/useHomeOrSearch';
 import { useLocation, useSearchParams } from 'react-router-dom';
+import { fetchSearchMovie } from 'api';
 
 export default function MoviesPage() {
   const location = useLocation();
