@@ -6,6 +6,9 @@ import { NoReviewsMessage } from 'components/Review/Review.styled';
 import { Loader } from 'components/Loader/Loader';
 import { useMovieData } from 'hooks/useMovieData';
 
+const defaultImg =
+  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
+
 
 export const Cast = () => {
   const params = useParams();
@@ -24,7 +27,9 @@ export const Cast = () => {
                     alt={`${actor.name}`}
                   />
                 ) : (
-                  <NoImage>No image found</NoImage>
+                  <NoImage>
+                    <img src={defaultImg} width={250} alt="Default" />
+                  </NoImage>
                 )}
                 <b>{actor.name}</b>
                 <p>

@@ -1,7 +1,6 @@
-
 import { fetchSearchMovie } from 'api';
+import MoviesList from 'components/MoviesList/MoviesList';
 import { Loader } from 'components/Loader/Loader';
-import { SearchedMovies } from 'components/SearchedMovies/SearchedMovies';
 
 import { useHomeOrSearch } from 'hooks/useHomeOrSearch';
 import { useLocation, useSearchParams } from 'react-router-dom';
@@ -24,7 +23,8 @@ export default function MoviesPage() {
   return (
     <>
       {!error ? (
-        <SearchedMovies
+        <MoviesList
+          title="Searched Movies"
           onSubmit={onSubmit}
           movies={movies}
           location={location}

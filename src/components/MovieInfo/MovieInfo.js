@@ -1,3 +1,5 @@
+import { Suspense, lazy } from 'react';
+
 import {
   BackPageLink,
   Genres,
@@ -12,6 +14,12 @@ import {
   Overview,
   UserScore,
 } from './MovieInfo.styled';
+
+const Cast = lazy(() => import('../Cast/Cast.js'));
+const Review = lazy(() => import('../Review/Review.js'));
+
+const defaultImg =
+  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 
 export const MovieInfo = ({
   moviePoster,
@@ -32,7 +40,9 @@ export const MovieInfo = ({
             alt="Movie Poster"
           />
         ) : (
-          <span>No poster available</span>
+          <span>
+            <img src={defaultImg} width={250} alt="Default" />
+          </span>
         )}
         <InfoContainer>
           <MovieTitle>{title || name}</MovieTitle>
@@ -47,10 +57,18 @@ export const MovieInfo = ({
           </GenresList>
           <NavList>
             <li>
-              <MovieLink to="credits">Cast</MovieLink>
+              <MovieLink to="/credits">
+                <Suspense fallback={<div>Loading Cast...</div>}>
+                  <Cast />
+                </Suspense>
+              </MovieLink>
             </li>
             <li>
-              <MovieLink to="reviews">Reviews</MovieLink>
+              <MovieLink to="/reviews">
+                <Suspense fallback={<div>Loading Reviews...</div>}>
+                  <Review />
+                </Suspense>
+              </MovieLink>
             </li>
           </NavList>
         </InfoContainer>

@@ -9,6 +9,9 @@ import {
 import { Loader } from 'components/Loader/Loader';
 import { useMovieData } from 'hooks/useMovieData';
 
+const defaultImg =
+  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
+
 
 export const Review = () => {
   const params = useParams();
@@ -28,7 +31,9 @@ export const Review = () => {
           ))}
         </ReviewsList>
       ) : (
-        <NoReviewsMessage>No reviews available</NoReviewsMessage>
+        <NoReviewsMessage>
+          <img src={defaultImg} width={250} alt="Default" />
+        </NoReviewsMessage>
       )}
       {loading && <Loader />}
     </ReviewsContainer>
