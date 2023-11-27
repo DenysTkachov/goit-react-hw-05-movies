@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.f2db3b31.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.a8ebc299.js",
-    "static/js/206.043864a5.chunk.js": "/goit-react-hw-05-movies/static/js/206.043864a5.chunk.js",
-    "static/js/797.4ccaac0d.chunk.js": "/goit-react-hw-05-movies/static/js/797.4ccaac0d.chunk.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.841424bd.js",
+    "static/js/206.ee31e9e4.chunk.js": "/goit-react-hw-05-movies/static/js/206.ee31e9e4.chunk.js",
+    "static/js/797.c7875ff5.chunk.js": "/goit-react-hw-05-movies/static/js/797.c7875ff5.chunk.js",
     "static/js/695.d5c13cc8.chunk.js": "/goit-react-hw-05-movies/static/js/695.d5c13cc8.chunk.js",
     "static/js/791.a3be0c77.chunk.js": "/goit-react-hw-05-movies/static/js/791.a3be0c77.chunk.js",
     "static/js/568.455c1d46.chunk.js": "/goit-react-hw-05-movies/static/js/568.455c1d46.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.f2db3b31.css.map": "/goit-react-hw-05-movies/static/css/main.f2db3b31.css.map",
-    "main.a8ebc299.js.map": "/goit-react-hw-05-movies/static/js/main.a8ebc299.js.map",
-    "206.043864a5.chunk.js.map": "/goit-react-hw-05-movies/static/js/206.043864a5.chunk.js.map",
-    "797.4ccaac0d.chunk.js.map": "/goit-react-hw-05-movies/static/js/797.4ccaac0d.chunk.js.map",
+    "main.841424bd.js.map": "/goit-react-hw-05-movies/static/js/main.841424bd.js.map",
+    "206.ee31e9e4.chunk.js.map": "/goit-react-hw-05-movies/static/js/206.ee31e9e4.chunk.js.map",
+    "797.c7875ff5.chunk.js.map": "/goit-react-hw-05-movies/static/js/797.c7875ff5.chunk.js.map",
     "695.d5c13cc8.chunk.js.map": "/goit-react-hw-05-movies/static/js/695.d5c13cc8.chunk.js.map",
     "791.a3be0c77.chunk.js.map": "/goit-react-hw-05-movies/static/js/791.a3be0c77.chunk.js.map",
     "568.455c1d46.chunk.js.map": "/goit-react-hw-05-movies/static/js/568.455c1d46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2db3b31.css",
-    "static/js/main.a8ebc299.js"
+    "static/js/main.841424bd.js"
   ]
 }
